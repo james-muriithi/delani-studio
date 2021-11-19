@@ -36,3 +36,14 @@ html {
     #services {
       min-height: 480px;
       height: auto; } }
+
+#contact {
+  background: url("../images/backgrounds/c_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #contact input, #contact textarea {
+    background: transparent;
+    border-radius: 0;
+    color: #fff; }
+    #contact input::placeholder, #contact textarea::placeholder {
+      color: #cccccc; }
