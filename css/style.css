@@ -41,9 +41,19 @@ html {
   background: url("../images/backgrounds/c_image.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-  #contact input, #contact textarea {
+  #contact input,
+  #contact textarea {
     background: transparent;
     border-radius: 0;
     color: #fff; }
-    #contact input::placeholder, #contact textarea::placeholder {
+    #contact input::placeholder,
+    #contact textarea::placeholder {
       color: #cccccc; }
+    #contact input:focus, #contact input:active,
+    #contact textarea:focus,
+    #contact textarea:active {
+      box-shadow: none;
+      border-color: #fff; }
+  #contact button:focus, #contact button:active {
+    box-shadow: none;
+    border-color: #fff; }
