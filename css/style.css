@@ -19,6 +19,8 @@ html {
     #home .scroll-down button {
       height: 2.4rem;
       width: 1.5rem;
+      line-height: 1.3rem;
       background: transparent;
       border: 2px solid #fff;
-      cursor: pointer; }
+      cursor: pointer;
+      transform: rotate(180deg); }
