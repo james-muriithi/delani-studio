@@ -31,11 +31,8 @@ html {
   background: url("../images/backgrounds/s_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 480px; }
-  @media screen and (min-width: 992px) {
-    #services {
-      min-height: 480px;
-      height: auto; } }
+  min-height: 480px;
+  height: auto; }
 
 #contact {
   background: url("../images/backgrounds/c_image.jpg");
