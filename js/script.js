@@ -1,8 +1,20 @@
+var contactForm = $("#contact-form");
+
 $(function () {
+  contactForm.on("submit", function (e) {
+    e.preventDefault();
+    let formValid = validateContactForm();
+    if (formValid) {
+      const name = $("input.name").val();
+      alert(`Thank you ${name}, your message has been received`);
+      clearForm();
+    }
+  });
 
-
-    toggleWhatWeDo();
+  toggleWhatWeDo();
 });
+
+// function
 
 //  function to toggle what we do
 function toggleWhatWeDo() {
@@ -16,3 +28,34 @@ function toggleWhatWeDo() {
     }
   });
 }
+
+// validate contact form
+
+function validateContactForm() {
+  let isFormValid = true;
+  const formInputs = contactForm.find("input,textarea");
+
+  formInputs.each(function () {
+    if (!$(this).val()) {
+      $(this).addClass("is-invalid");
+      isFormValid = false;
+    }
+  });
+  return isFormValid;
+}
+
+function removeFormErrors() {
+  contactForm.find("input,textarea").on("keydown", function () {
+    if ($(this).hasClass("is-invalid")) {
+      $(this).removeClass("is-invalid");
+    }
+  });
+}
+
+function clearForm() {
+  contactForm.find("input,textarea").each(function () {
+    $(this).val("");
+  });
+}
+
+removeFormErrors();
