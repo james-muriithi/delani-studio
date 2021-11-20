@@ -54,3 +54,12 @@ html {
   #contact button:focus, #contact button:active {
     box-shadow: none;
     border-color: #fff; }
+
+#what-we-do {
+  min-height: 450px;
+  display: flex;
+  align-items: center; }
+  #what-we-do .service {
+    cursor: pointer; }
+    #what-we-do .service .service-details {
+      display: none; }
