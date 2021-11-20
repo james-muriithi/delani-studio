@@ -30,6 +30,12 @@ foo@bar: ~$ git clone https://github.com/james-muriithi/delani-stuio.git
 ## Screenshot
 ![Screenshot](./screenshots/screenshot.png)
 
+## Contact
+
+To make a contribution to the code used or any suggestions you can click on the contact link and email me your suggestions.
+
+Email: james.muthike@student.moringaschool.com
+
 ## License
 Copyright (c) 2021 Moringa school
 
