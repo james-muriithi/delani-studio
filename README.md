@@ -11,7 +11,7 @@ A landing page for Delani Studio, with a contact section.
 * JS
 * JQuery
 
-## How to setup
+## How to setup (BDD)
 
 1. Download or clone the project
 ```shell
