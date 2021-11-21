@@ -1,6 +1,9 @@
 var contactForm = $("#contact-form");
 
 $(function() {
+    // what we do titles add bold class and center
+    $('.w-title').addClass("fw-bold text-center");
+
     contactForm.on("submit", function(e) {
         e.preventDefault();
         let formValid = validateContactForm();
